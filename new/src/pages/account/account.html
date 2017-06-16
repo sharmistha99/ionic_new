@@ -1,0 +1,74 @@
+<!--
+  Generated template for the AccountPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Registration</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+<ion-list>
+	<!--<ion-item>
+	   <ion-label floating >Full-Name</ion-label>
+	   <ion-input type="text" [(ngModel)]="fname" placeholder="Full-Name"></ion-input>
+    </ion-item>-->
+    <ion-item>
+       <ion-label floating>Name</ion-label>
+       <ion-input type="text" [(ngModel)]="name" placeholder="Name"></ion-input>
+    </ion-item>
+    <ion-item>
+       <ion-label floating>Email</ion-label>
+       <ion-input type="email" [(ngModel)]="email" placeholder="Email"></ion-input>
+    </ion-item>
+    <ion-item>
+    	<ion-label floating>Password</ion-label>
+    	<ion-input type="Password" [(ngModel)]="password" placeholder="Password"></ion-input>
+    </ion-item>
+    <!--<ion-item>
+        <ion-label floating>Confirm-Password</ion-label>
+        <ion-input type="Password" [(ngModel)]="cpass" placeholder="Confirm-Password"></ion-input>
+    </ion-item>-->
+    <ion-item>
+       <ion-label floating>Mobile</ion-label>
+       <ion-input type="text" [(ngModel)]="mobile" placeholder="Mobile"></ion-input>
+       </ion-item>
+       <ion-item>
+       <ion-label floating>Pincode</ion-label>
+       <ion-input type="text" [(ngModel)]="pincode" placeholder="Pincode"></ion-input>
+    </ion-item>
+    <ion-item>
+       <ion-label floating>Building</ion-label>
+       <ion-input type="text" [(ngModel)]="building" placeholder="Building"></ion-input>
+    </ion-item>
+    <ion-item>
+       <ion-label floating>Street</ion-label>
+       <ion-input type="text" [(ngModel)]="street" placeholder="Street"></ion-input>
+    </ion-item>
+    <ion-item>
+       <ion-label floating>District</ion-label>
+       <ion-input type="text" [(ngModel)]="district" placeholder="District"></ion-input>
+    </ion-item>
+<ion-item>
+       <ion-label floating>City</ion-label>
+       <ion-input type="text" [(ngModel)]="city" placeholder="City"></ion-input>
+    </ion-item>
+    <ion-item>
+       <ion-label floating>Country</ion-label>
+       <ion-input type="text" [(ngModel)]="country" placeholder="Country"></ion-input>
+    </ion-item>
+    <ion-item>
+       <ion-label floating>User_Type</ion-label>
+       <ion-input type="text" [(ngModel)]="usertype" placeholder="User_Type"></ion-input>
+    </ion-item>
+</ion-list>
+<br>
+<button ion-button colour="primary" round (click)="register();" >Register</button>
+
+</ion-content>

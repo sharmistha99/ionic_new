@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Ionic Menu Starter</h3>
+
+  <p>
+    If you get lost, the  will show you the way.
+  </p>
+
+  <button ion-button secondary (click)="alertP();">Toggle Menu</button>
+  <ion-list>
+
+  <ion-item>
+    <ion-label fixed>Username</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Password</ion-label>
+    <ion-input type="password" value=""></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<div padding>
+  <button ion-button color="primary" block>Sign In</button>
+</div>
+ <button ion-button block (click)="presentLoading();">Show Loading</button>
+ <ion-list>
+       <ion-list-header>
+      Hobbits
+    </ion-list-header>
+    <a ion-item (click)="openModal({charNum: 0})">
+      Gollum
+    </a>
+    <a ion-item (click)="openModal({charNum: 1})">
+      Frodo Baggins
+    </a>
+    <a ion-item (click)="openModal({charNum: 2})">
+      Sam
+</a>
+</ion-list>
+<button ion-button block (click)="Loading()">Next page</button>
+</ion-content>
